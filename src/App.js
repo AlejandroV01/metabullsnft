@@ -7,7 +7,6 @@ import Mint from "./Mint";
 function App() {
   return <div className="App">
     <Home />
-    <Mint />
   </div>;
 }
 
