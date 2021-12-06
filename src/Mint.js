@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
@@ -94,6 +94,7 @@ function Mint() {
 
   useEffect(() => {
     getData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blockchain.account]);
 
   
@@ -125,7 +126,7 @@ function Mint() {
             ai={"center"}
             style={{ backgroundColor: "#399e9e", padding: 24 }}
           >
-            {Number(data.totalSupply) == 5000 ? (
+            {Number(data.totalSupply) === 5000 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -135,6 +136,7 @@ function Mint() {
                   You can still find Nerdy Coder Clones on{" "}
                   <a
                     target={"_blank"}
+                    rel = {"noreferrer"}
                     href={"https://opensea.io/collection/nerdy-coder-clones"}
                   >
                     Opensea.io
