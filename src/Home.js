@@ -15,12 +15,12 @@ function Home(){
                 </div>
             </div>
             <div class="nav container">
-                <a href="#"><img class="navImg" src="./Bullbanner.png" alt=""/></a>
-                <a href="#">Roadmap</a>
-                <a href="#">Mint</a>
-                <a href="#">Rarity</a>
-                <a href="#">Team</a>
-                <a href="#">FAQ</a>
+                <a href="/home.js"><img class="navImg" src="./Bullbanner.png" alt=""/></a>
+                <a href="/home.js">Roadmap</a>
+                <a href="/home.js">Mint</a>
+                <a href="/home.js">Rarity</a>
+                <a href="/home.js">Team</a>
+                <a href="/home.js">FAQ</a>
                 <FontAwesomeIcon class= 'discord' icon={['fab', 'discord']} />
                 <FontAwesomeIcon class= 'instagram' icon={['fab', 'instagram']} />
             </div>
