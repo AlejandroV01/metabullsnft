@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import bullgif from './assets/images/bullgif.gif'
+import Clock from './components/Clock'
 
 function Home(){
+    const [timerDays, setTimerDays] = useState();
+    const [timerHours, setTimerHours] = useState();
+    const [timerMinutes, setTimerMinutes] = useState();
+    const [timerSeconds, setTimerSeconds] = useState();
+
     return(
         
         <div class='mainContainer'>
@@ -50,8 +56,11 @@ function Home(){
                     <div class="thirdOverlay">
                         <div class="mintContainer">
                             <h1>Public Sale</h1>
-                            <p>Max mints of 5 per transaction and 20 per wallet</p>
-                            <p><strong>0.01 ETH + Gas Fee</strong></p>
+                            <p class="release">Public Release On:</p>
+                            <p class="release lastchild">01/01/2022</p>
+                            <Clock timerDays = {timerDays} timerHours = {timerHours} timerMinutes = {timerMinutes} timerSeconds = {timerSeconds}/>
+                            <p class="releaseprice">Max mints of 5 per transaction and 20 per wallet</p>
+                            <p class="releaseprice"><strong>0.01 ETH + Gas Fee</strong></p>
                             <a href="Home.js"><button>Mint</button></a>
                         </div>
                     </div>
