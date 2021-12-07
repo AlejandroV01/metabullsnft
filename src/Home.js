@@ -40,7 +40,7 @@ function Home(){
                      <p>Apart from getting an awesome profile picture, participating in this project will help shape the Meta Bull's name. The ETH from the purchased Meta Bulls will be raised to build a system of community giveaways, awesome Meta Bull merchandise, future collaboration with other big brands, and much more!</p>
                     </div>
                     <div class="rightPanel">
-                        <img src={bullgif}/>
+                        <img src={bullgif} alt=''/>
                     </div>
                 </div>   
             </section>
