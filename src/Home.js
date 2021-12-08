@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import bullgif from './assets/images/bullgif.gif'
 import Clock from './components/Clock'
+
 
 function Home(){
     const [timerDays, setTimerDays] = useState();
@@ -10,6 +11,38 @@ function Home(){
     const [timerMinutes, setTimerMinutes] = useState();
     const [timerSeconds, setTimerSeconds] = useState();
 
+    let interval;
+
+    const startTimer=()=>{
+        const countDownDate= new Date("December 28,2021 ").getTime();
+
+        interval=setInterval(()=>{
+            const now = new Date().getTime();
+
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (24 * 60 * 60 * 1000));
+            const hours = Math.floor((distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+            const seconds = Math.floor((distance % (60 * 1000)) / 1000);
+
+            if(distance<0){
+                //stop Timer
+
+                clearInterval(interval.current);
+            }else{
+                // Update timer
+                setTimerDays(days);
+                setTimerHours(hours);
+                setTimerMinutes(minutes);
+                setTimerSeconds(seconds);
+            }
+        })
+    };
+
+    useEffect(()=> {
+        startTimer();
+    });
     return(
         
         <div class='mainContainer'>
@@ -57,11 +90,11 @@ function Home(){
                         <div class="mintContainer">
                             <h1>Public Sale</h1>
                             <p class="release">Public Release On:</p>
-                            <p class="release lastchild">01/01/2022</p>
+                            <p class="release lastchild">12/28/2021</p>
                             <Clock timerDays = {timerDays} timerHours = {timerHours} timerMinutes = {timerMinutes} timerSeconds = {timerSeconds}/>
-                            <p class="releaseprice">Max mints of 5 per transaction and 20 per wallet</p>
-                            <p class="releaseprice"><strong>0.01 ETH + Gas Fee</strong></p>
-                            <a href="Home.js"><button>Mint</button></a>
+                            <p class="releaseprice">Max mints of 3 per transaction and 3 per wallet</p>
+                            <p class="releaseprice"><strong>"TBA" ETH + Gas Fee</strong></p>
+                            <a href="Mint.js"><button>Mint</button></a>
                         </div>
                     </div>
                 </div>
