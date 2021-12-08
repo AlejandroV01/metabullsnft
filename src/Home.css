@@ -193,6 +193,12 @@
     
 }
 
+.leftPanel{
+    margin-top: 5%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
 .leftPanel h1{
     font-family: 'Press Start 2P', sans-serif;
     margin-bottom: 2rem;
