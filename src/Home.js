@@ -55,17 +55,20 @@ function Home(){
                     </div>
                     </div>
                 </div>
-                <div class="nav container">
+                
+            </section>
+            <div class="nav container sticky">
                     <a href="/home.js"><img class="navImg" src="./Bullbanner.png" alt=""/></a>
                     <a href="/home.js">Roadmap</a>
                     <a href="/home.js">Mint</a>
                     <a href="/home.js">Rarity</a>
                     <a href="/home.js">Team</a>
                     <a href="/home.js">FAQ</a>
-                    <FontAwesomeIcon class= 'discord' icon={['fab', 'discord']} />
-                    <FontAwesomeIcon class= 'instagram' icon={['fab', 'instagram']} />
-                </div>
-            </section>
+                    <span></span>
+                    <a href="https://www.google.com" target="_blank" class= 'discord'><FontAwesomeIcon class= 'discord' icon={['fab', 'discord']} /></a>
+                    <a href="https://twitter.com/MetaBullsNFT" target="_blank" class= 'twitter'><FontAwesomeIcon class= 'twitter' icon={['fab', 'twitter']} /></a>
+                    <a href="https://instagram.com/metabullsnft/" target="_blank" class= 'instagram'><FontAwesomeIcon class= 'instagram' icon={['fab', 'instagram']} /></a>
+            </div>
 
 
             <section class = 'secondSection divContainer'>

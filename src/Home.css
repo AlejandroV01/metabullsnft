@@ -13,12 +13,13 @@
 }
 
 .container{
-    padding: 0px 3.5rem;
+    padding: 0px 3%;
 }
 /* SECTION 1 */ 
 .mainPicture{
+    position: relative;
     width: 100%;
-    min-height: 54rem;  
+    height: 92vh;  
     background-color: red;
     background-image: url(./Bullbanner.png);
     background-size: cover;
@@ -29,7 +30,7 @@
 .overlay{
     position: absolute;
     width: 100%;
-    height: 54rem;
+    height: 92vh;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -40,14 +41,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: fit-content;
-    padding: 20px 50px;
     font-family: 'Press Start 2P', sans-serif;
-    font-size: 54px;
+    font-size: 4rem;
+
+    
 }
 
 .textBoxCenter :nth-child(1){
     margin-bottom: 2rem;
     color: #F1c30f;
+    
 }
 
 .textBoxCenter :nth-child(2){
@@ -57,17 +60,23 @@
 
 
 .nav{
-    position:sticky;
+    position: relative;
     display: grid;
-    grid-template-columns: 10fr repeat(5, 1fr) 8fr 1fr; 
+    grid-template-columns: 10fr repeat(5, 1fr) 7fr 1fr 1fr 1fr; 
     background-color: rgb(255, 255, 255);
     justify-items: center;
     align-items: center;
     grid-template-rows: minmax(4.6rem, 4.6rem);
     width: 100%;
-    box-shadow: 0px 1px 5px rgb(128, 128, 128);
+    box-shadow: 0px 2px 5px rgb(151, 151, 151);
+    z-index: 100;
+    
 }
 
+.sticky{
+    position: sticky;
+    top:0px;
+}
 
 .navImg{
     width: 220px;
@@ -81,10 +90,13 @@
     font-family: 'Press Start 2P', sans-serif;
     margin-left: 20px;
     margin-right: 20px;
+    transition: 0.2s ease-in-out;
+    
 }
 
 .nav a:hover{
-    text-decoration: underline rgb(203,174,255) 2px;
+    text-shadow: 1px 1px 7px #000000;
+    transition: 0.2s ease-in-out;
 }
 
 .nav a:nth-child(1){
@@ -94,17 +106,70 @@
     padding: 0;
 }
 
-.discord{
+/* social media */
+
+/* discord */
+.nav a:nth-child(8){ 
+    padding:0;
+    margin:0;
+    margin: 0% 3%;
     display: grid;
     justify-self: end;
-    width: 38px;
-    margin-right: 0.5rem;
+    width: 2.5em;
+    transition: 0.4s ease-in-out;
+    color: #1d1d1d;
+    transition: 0.4s ease-in-out;
+}
+.discord{
+    transition: 0.4s ease-in-out;
+}
+.discord:hover{
+    color: #5865F2;
+    transition: 0.4s ease-in-out;
 }
 
-.instagram{
-    justify-self: center;
-    width: 35px;
+/* twitter */
+.nav a:nth-child(9){ 
+    padding:0;
+    margin:0;
+    margin: 0% 3%;
+    display: grid;
+    justify-self: end;
+    width: 2.5em;
+    transition: 0.4s ease-in-out;
+    color: #1d1d1d;
+    transition: 0.4s ease-in-out;
 }
+.twitter{
+    transition: 0.4s ease-in-out;
+}
+.twitter:hover{
+    color: #1DA1F2;
+    transition: 0.4s ease-in-out;
+}
+
+/* insta */
+.nav a:nth-child(10){ 
+    padding:0;
+    margin:0;
+    margin: 0% 3%;
+    display: grid;
+    justify-self: end;
+    width: 2.5em;
+    transition: 0.4s ease-in-out;
+    color: #1d1d1d;
+    transition: 0.4s ease-in-out;
+}
+.instagram{
+    transition: 0.4s ease-in-out;
+}
+.instagram:hover{
+    color: rgb(131, 58, 180);
+    transition: 0.4s ease-in-out;
+}
+
+
+
 
 .divContainer{
     padding: 0px 22rem;
@@ -155,6 +220,7 @@
     background-image: url(./Bullbanner.png);
     width: 100%;
     height: 75vh;
+    background-size: cover;
 }
 
 .thirdOverlay{
@@ -214,6 +280,22 @@
     margin-bottom: 5.5%;
 }
 
+.mintContainer a button{
+    background-color: #000000;
+    color: #F1c30f;
+    text-shadow: 1px 1px 7px #F1c30f;
+    border:none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.mintContainer a button:hover{
+    background: rgb(7, 7, 7);
+    color: white;
+    text-shadow: 1px 1px 7px white;
+    transition: 0.3s ease-in-out;
+}
+
 /* CLOCK */
 .clock{
     font-family: 'Press Start 2P', sans-serif;
@@ -250,4 +332,21 @@
     font-size: 1rem;
     color: silver;
     text-shadow: none;
+}
+
+/* CLOCK END */
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+    .textBoxCenter{
+    font-size: 2rem;
+}
+
 }
