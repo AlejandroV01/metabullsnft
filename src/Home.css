@@ -242,6 +242,7 @@
     background-color: white;
     width: fit-content;
     padding: 2% 2%;
+    border: 1px solid white;
     /*padding: 12rem 4.5rem;*/
 }
 
@@ -272,6 +273,7 @@
     font-size: 1.3em;
     background-color: black;
     color: white;
+    width: 60%;
 }
 
 .release {
@@ -302,6 +304,21 @@
     transition: 0.3s ease-in-out;
 }
 
+.lock{
+    
+    display: inline;
+    width: 12%;
+    color: #bdbdbd;
+    float:right;
+}
+
+.disclaimer{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-top: 2%;
+    font-size: 0.8em;
+}
+
 /* CLOCK */
 .clock{
     font-family: 'Press Start 2P', sans-serif;
@@ -318,7 +335,7 @@
     border-radius: 15px;
     border: 2px solid silver;
     box-shadow: 0 0 20px 2px;
-    margin-bottom: 8%;
+    margin-bottom: 6%;
 }
 
 .clock section{
@@ -342,11 +359,62 @@
 
 /* CLOCK END */
 
+.fourthSection{
+    width: 100%;
+    background: #F1c30f;
+}
+
+.rarity{
+    position: relative;
+    width: 60%;
+    left:50%;
+    transform: translateX(-50%);
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.rarity h1{
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    color: #222222;
+}
+
+.topGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.bottomGrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 85%;
+    margin-left: 6.4%;
+    margin-top: 5%;
+}
+
+.rarityObjects img{
+    position: relative;
+    width: 50%;
+    background: #c9c9c9;
+    border: 3px rgb(0, 0, 0) solid;
+    border-radius: 50%;
+}
+
+.rarityObjects p{
+    padding-top:1%;
+    font-family: 'Press Start 2P', sans-serif;
+    font-weight: 400;
+    padding-bottom: 2%;
+    color: #222222;
+}
 
 
-
-
-
+.fifthSection{
+    height: 20vh;
+    background-color:#222222;
+}
 
 
 
@@ -354,5 +422,4 @@
     .textBoxCenter{
     font-size: 2rem;
 }
-
 }

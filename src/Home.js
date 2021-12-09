@@ -3,7 +3,16 @@ import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import bullgif from './assets/images/bullgif.gif'
 import Clock from './components/Clock'
-
+import rarityBackground from './assets/images/rarityBackground.png'
+import rarityHair from './assets/images/rarityHair.png'
+import rarityNose from './assets/images/rarityNose.png'
+import rarityHorn from './assets/images/rarityHorn.png'
+import rarityEye from './assets/images/rarityEye.png'
+import rarityHat from './assets/images/rarityHat.png'
+import rarityEaring from './assets/images/rarityEaring.png'
+import rarityClothe from './assets/images/rarityClothe.png'
+import rarityMouth from './assets/images/rarityMouth.png'
+import rarityRare from './assets/images/rarityRare.png'
 
 function Home() {
     const [timerDays, setTimerDays] = useState();
@@ -97,19 +106,73 @@ function Home() {
                             <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
                             <p class="releaseprice">Max mints of 3 per transaction and 3 per wallet</p>
                             <p class="releaseprice"><strong>"TBA" ETH + Gas Fee</strong></p>
-                            <a href="Mint.js"><button>Mint</button></a>
+                            <a href="Mint.js"><button>Mint<FontAwesomeIcon class='lock' icon={['fas', 'lock']} /></button></a>
+                            <p class='disclaimer'>*Mint button locked until public release date</p>
+                            
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="fourthSection">
-                <div className="leftSide"></div>
-                <div className="fourthSectionRightSide">
-                    <h1>Rarity</h1>
+                <div className="rarity">
+                    <h1>Attributes</h1>
+                    <div className="topGrid">
+                        <div className="rarityObjects">
+                            <img src={rarityBackground} alt="" />
+                            <p>15</p>
+                            <p>Backgrounds</p>
+                        </div>
+                        <div className="rarityObjects">
+                            <img src={rarityHair} alt="" />
+                            <p>15</p>
+                            <p>Hairs</p>
+                        </div>
+                        <div className="rarityObjects">
+                            <img src={rarityNose} alt="" />
+                            <p>15</p>
+                            <p>Noses</p>
+                        </div>
+                        <div className="rarityObjects">
+                            <img src={rarityHorn} alt="" />
+                            <p>15</p>
+                            <p>Horns</p>
+                        </div>
+                        <div className="rarityObjects">
+                            <img src={rarityEye} alt="" />
+                            <p>15</p>
+                            <p>Eyes</p>
+                        </div>
+                    </div>
+                    <div className="bottomGrid">
+                        <div className="rarityObjects">
+                            <img src={rarityHat} alt="" class='rarityhat'/>
+                            <p>15</p>
+                            <p>Hats</p>
+                        </div>
+                        <div className="rarityObjects">
+                            <img src={rarityEaring} alt="" />
+                            <p>15</p>
+                            <p>Earrings</p>
+                        </div>
+                        <div className="rarityObjects">
+                            <img src={rarityClothe} alt="" />
+                            <p>15</p>
+                            <p>Clothes</p>
+                        </div>
+                        <div className="rarityObjects">
+                            <img src={rarityMouth} alt="" />
+                            <p>15</p>
+                            <p>Mouths</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
 
+            <section className="fifthSection">
+
+            </section>
         </div>
     )
 }
