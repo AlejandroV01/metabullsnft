@@ -422,4 +422,11 @@
     .textBoxCenter{
     font-size: 2rem;
 }
+
+.firstSection{
+    width: 100vw;
+}
+.mintContainer{
+    width: 100%;
+}
 }

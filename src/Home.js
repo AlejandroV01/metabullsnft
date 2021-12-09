@@ -12,7 +12,6 @@ import rarityHat from './assets/images/rarityHat.png'
 import rarityEaring from './assets/images/rarityEaring.png'
 import rarityClothe from './assets/images/rarityClothe.png'
 import rarityMouth from './assets/images/rarityMouth.png'
-import rarityRare from './assets/images/rarityRare.png'
 
 function Home() {
     const [timerDays, setTimerDays] = useState();
