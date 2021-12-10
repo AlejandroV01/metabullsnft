@@ -3,15 +3,17 @@ import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import bullgif from './assets/images/bullgif.gif'
 import Clock from './components/Clock'
-import rarityBackground from './assets/images/rarityBackground.png'
-import rarityHair from './assets/images/rarityHair.png'
-import rarityNose from './assets/images/rarityNose.png'
-import rarityHorn from './assets/images/rarityHorn.png'
-import rarityEye from './assets/images/rarityEye.png'
-import rarityHat from './assets/images/rarityHat.png'
-import rarityEaring from './assets/images/rarityEaring.png'
-import rarityClothe from './assets/images/rarityClothe.png'
-import rarityMouth from './assets/images/rarityMouth.png'
+// import rarityBackground from './assets/images/rarityBackground.png'
+// import rarityHair from './assets/images/rarityHair.png'
+// import rarityNose from './assets/images/rarityNose.png'
+// import rarityHorn from './assets/images/rarityHorn.png'
+// import rarityEye from './assets/images/rarityEye.png'
+// import rarityHat from './assets/images/rarityHat.png'
+// import rarityEaring from './assets/images/rarityEaring.png'
+// import rarityClothe from './assets/images/rarityClothe.png'
+// import rarityMouth from './assets/images/rarityMouth.png'
+import logoish from './assets/images/logoish.png'
+import graylinevertical from './assets/images/graylinevertical.png'
 
 function Home() {
     const [timerDays, setTimerDays] = useState();
@@ -66,7 +68,7 @@ function Home() {
 
             </section>
             <div class="nav container sticky">
-                <a href="/home.js"><img class="navImg" src="./Bullbanner.png" alt="" /></a>
+                <a href="/home.js"><img class="navImg" src={logoish} alt="" /></a>
                 <a href="/home.js">Roadmap</a>
                 <a href="/home.js">Mint</a>
                 <a href="/home.js">Rarity</a>
@@ -81,17 +83,21 @@ function Home() {
 
             <section class='secondSection divContainer'>
                 <div class="aboutContainer">
+                    
                     <div class="leftPanel">
                         <h1>What are Meta Bulls?</h1>
+                        <div className="aboutText">
                         <p>Meta Bulls NFT is a collection of 5000 NFTs with a raging passion for bullish patterns. They are all decked out with hats, outfits, eyewear, and much more.</p>
 
                         <p>The collection consists of 5000 programmatically generated bulls from over 90 distinctive traits. Some items might be rarer but each Meta Bull is completely unique! Meta Bulls showcases that feeling of fashion, chill vibes, and a bullish mood. Live in a world of bulls, in a world with style, and in a world of W's.</p>
 
                         <p>Apart from getting an awesome profile picture, participating in this project will help shape the Meta Bull's name. The ETH from the purchased Meta Bulls will be raised to build a system of community giveaways, awesome Meta Bull merchandise, future collaboration with other big brands, and much more!</p>
+                        </div>
                     </div>
                     <div class="rightPanel">
                         <img src={bullgif} alt='' />
                     </div>
+                    
                 </div>
             </section>
 
@@ -114,11 +120,11 @@ function Home() {
             </section>
 
             <section className="fourthSection">
-                <div className="rarity">
+                {/* <div className="rarity">
                     <h1>Attributes</h1>
                     <div className="topGrid">
                         <div className="rarityObjects">
-                            <img src={rarityBackground} alt="" />
+                            <img src={rarityBackground} alt=""/>
                             <p>15</p>
                             <p>Backgrounds</p>
                         </div>
@@ -166,6 +172,40 @@ function Home() {
                         </div>
                     </div>
                     
+                </div> */}
+
+                <h1>Roadmap</h1>
+                <div className="roadmap">
+                    <div className="roadmapRow roadmapone">
+                        <div>0%</div>
+                        <img src={graylinevertical} alt="" />
+                        <p>Take a seat, join other fellow Octos on Discord, and start sharpening your skills for the treasure hunt. We will be raffling 5 Octos once we reach 5,000 members on Discord.</p>
+                    </div>
+                    <div className="roadmapRow">
+                        <div>20%</div>
+                        <img src={graylinevertical} alt=""/>
+                        <p>Take a seat, join other fellow Octos on Discord, and start sharpening your skills for the treasure hunt. We will be raffling 5 Octos once we reach 5,000 members on Discord.</p>
+                    </div>
+                    <div className="roadmapRow">
+                        <div>40%</div>
+                        <img src={graylinevertical} alt="" />
+                        <p>Take a seat, join other fellow Octos on Discord, and start sharpening your skills for the treasure hunt. We will be raffling 5 Octos once we reach 5,000 members on Discord.</p>
+                    </div>
+                    <div className="roadmapRow">
+                        <div>60%</div>
+                        <img src={graylinevertical} alt="" />
+                        <p>Take a seat, join other fellow Octos on Discord, and start sharpening your skills for the treasure hunt. We will be raffling 5 Octos once we reach 5,000 members on Discord.</p>
+                    </div>
+                    <div className="roadmapRow">
+                        <div>80%</div>
+                        <img src={graylinevertical} alt="" />
+                        <p>Take a seat, join other fellow Octos on Discord, and start sharpening your skills for the treasure hunt. We will be raffling 5 Octos once we reach 5,000 members on Discord.</p>
+                    </div>
+                    <div className="roadmapRow roadmaplast">
+                        <div>100%</div>
+                        <img src={graylinevertical} alt="" />
+                        <p>Take a seat, join other fellow Octos on Discord, and start sharpening your skills for the treasure hunt. We will be raffling 5 Octos once we reach 5,000 members on Discord.</p>
+                    </div>
                 </div>
             </section>
 
