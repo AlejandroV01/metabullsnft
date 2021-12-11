@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './HomeAgain.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import bullgif from './assets/images/bullgif.gif'
-import Clock from './components/Clock'
+//import bullgif from './assets/images/bullgif.gif'
+//import Clock from './components/Clock'
 // import rarityBackground from './assets/images/rarityBackground.png'
 // import rarityHair from './assets/images/rarityHair.png'
 // import rarityNose from './assets/images/rarityNose.png'
@@ -13,7 +13,7 @@ import Clock from './components/Clock'
 // import rarityClothe from './assets/images/rarityClothe.png'
 // import rarityMouth from './assets/images/rarityMouth.png'
 import logoish from './assets/images/logoish.png'
-import graylinevertical from './assets/images/graylinevertical.png'
+//import graylinevertical from './assets/images/graylinevertical.png'
 
 function HomeAgain() {
     const [timerDays, setTimerDays] = useState();
