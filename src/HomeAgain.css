@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.mainPicture{
+    background-image: url(./Bullbanner.png);
+    background-size: cover;
+    width: 100%;
+}
+
+.overlay{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.textBoxCenter{
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 20px;
+    font-size: 32px;
+}
+.textBoxCenter h1{
+    
+}

@@ -104,6 +104,7 @@ function Home() {
             <section class="thirdSection">
                 <div class="thirdSectionPicture">
                     <div class="thirdOverlay">
+                        <div className="containerpad">
                         <div class="mintContainer">
                             <h1>Public Sale</h1>
                             <p class="release">Public Release On:</p>
@@ -113,7 +114,7 @@ function Home() {
                             <p class="releaseprice"><strong>"TBA" ETH + Gas Fee</strong></p>
                             <a href="Mint.js"><button>Mint<FontAwesomeIcon class='lock' icon={['fas', 'lock']} /></button></a>
                             <p class='disclaimer'>*Mint button locked until public release date</p>
-                            
+                            </div>
                         </div>
                     </div>
                 </div>
