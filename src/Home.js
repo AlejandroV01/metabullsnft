@@ -68,12 +68,12 @@ function Home() {
 
             </section>
             <div class="nav container sticky">
-                <a href="/home.js"><img class="navImg" src={logoish} alt="" /></a>
-                <a href="/home.js">Roadmap</a>
-                <a href="/home.js">Mint</a>
-                <a href="/home.js">Rarity</a>
-                <a href="/home.js">Team</a>
-                <a href="/home.js">FAQ</a>
+                <a href="/home.js" class='navmenu'><img class="navImg" src={logoish} alt="" /></a>
+                <a href="/home.js" class='navmenu'>Roadmap</a>
+                <a href="/home.js" class='navmenu'>Mint</a>
+                <a href="/home.js" class='navmenu'>Rarity</a>
+                <a href="/home.js" class='navmenu'>Team</a>
+                <a href="/home.js" class='navmenu'>FAQ</a>
                 <span></span>
                 <a href="https://www.google.com" target="_blank" rel="noreferrer" class='discord'><FontAwesomeIcon class='discord' icon={['fab', 'discord']} /></a>
                 <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitter'><FontAwesomeIcon class='twitter' icon={['fab', 'twitter']} /></a>
@@ -81,7 +81,7 @@ function Home() {
             </div>
 
 
-            <section class='secondSection divContainer'>
+            <section class='secondSection'>
                 <div class="aboutContainer">
                     
                     <div class="leftPanel">

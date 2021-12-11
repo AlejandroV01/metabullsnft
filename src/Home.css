@@ -256,7 +256,7 @@
     width: fit-content;
     padding: 2% 2%;
     border: 1px solid white;
-    margin: 50px 0px;
+    
     /*padding: 12rem 4.5rem;*/
 }
 
@@ -428,7 +428,7 @@
     background-color: #0f0f0f;
 }
 .roadmap{
-    padding: 30px 300px 30px 900px;
+    padding: 50px 100px;
 }
 
 .fourthSection h1{
@@ -480,12 +480,26 @@
 
 
 
-@media only screen and (max-width: 850px){
-    .textBoxCenter{
-    font-size: 2rem;
-}
+@media only screen and (max-width: 950px){
 
+    .aboutContainer{
+        position: relative;
+        top:460px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 
+    .rightPanel img{
+        width: 200px;
+    }
+
+    .secondSection{
+        height: 95vh;
+    }
+
+    .aboutText{
+        line-height: 100px;
+    }
 
 }
 
@@ -493,7 +507,26 @@
     .secondSection{
         background-color: rgb(236, 236, 236);
     }
-    
+    .navmenu{
+        display: none;
+    }
+
+    .nav{
+        grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .discord{
+        float: right;
+    }
+
+    .twitter{
+        float: right;
+    }
+
+    .instagram{
+        float: right;
+    }
     .aboutContainer{
         width: 900px;
         height: 515px;
