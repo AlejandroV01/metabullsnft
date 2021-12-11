@@ -57,17 +57,28 @@ function HomeAgain() {
 
         <div class='whole'>
 
-            <section class='firstSection'>
-                <div class='mainPicture'>
-                    <div class='overlay'>
-                        <div class='textBoxCenter'>
-                            <h1>Welcome To</h1>
-                            <h1>Meta Bulls</h1>
-                        </div>
+            
+            <div class='mainPicture'>
+                <div class='overlay'>
+                    <div class='textBoxCenter'>
+                        <h1>Welcome To</h1>
+                        <h1>Meta Bulls</h1>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div class="nav">
+                <a href="/home.js" ><img class="navImg" src={logoish} alt="" /></a>
+                <a href="/home.js" class='navmenu'>Roadmap</a>
+                <a href="/home.js" class='navmenu'>Mint</a>
+                <a href="/home.js" class='navmenu'>Rarity</a>
+                <a href="/home.js" class='navmenu'>Team</a>
+                <a href="/home.js" class='navmenu'>FAQ</a>
+                <a href="https://www.google.com" target="_blank" rel="noreferrer" class='discord'><FontAwesomeIcon class='discord' icon={['fab', 'discord']} /></a>
+                <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitter'><FontAwesomeIcon class='twitter' icon={['fab', 'twitter']} /></a>
+                <a href="https://instagram.com/metabullsnft/" target="_blank" rel="noreferrer" class='instagram'><FontAwesomeIcon class='instagram' icon={['fab', 'instagram']} /></a>
+            </div>
             
+
     </div>
     )
 }
