@@ -10,21 +10,30 @@
     background-image: url(./Bullbanner.png);
     background-size: cover;
     width: 100%;
+    height: 85vh;
 }
 
 .overlay{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    height: 85vh;
 }
 
 .textBoxCenter{
+    position: relative;
     font-family: 'Press Start 2P', sans-serif;
-    padding: 100px;
     font-size: 35px;
+    top:50%;
+    transform: translateY(-50%);
 }
+
 .textBoxCenter h1:first-child{
     margin-bottom: 20px;
     color: #F1c30f;
+}
+.textBoxCenter h1:last-child{
+    margin-bottom: 20px;
+    color: white;
 }
 
 
@@ -39,6 +48,7 @@
     align-items: center;
     width: 100%;
     box-shadow: 0px 2px 5px rgb(151, 151, 151);
+    background-color: white;
 }
 
 .navImg{
@@ -96,3 +106,118 @@
     transition: 0.4s ease-in-out;
 }
 
+
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.leftPanel{
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 30px;
+    text-align: center;
+}
+.leftPanel h1{
+    font-family: 'Press Start 2P', sans-serif;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.leftPanel p{
+    color: #222222;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 20px;
+}
+.leftPanel p:last-child{
+    margin-bottom: 0px;
+}
+.rightPanel{
+    display: grid;
+    margin-bottom: 20px;
+}
+.rightPanel img{
+    width: 300px;
+    justify-self: center;
+    
+}
+
+
+
+
+
+
+
+
+.thirdSectionPicture{
+    background-image: url(./Bullbanner.png);
+    width: 100%;
+    background-size: cover;
+}
+
+.thirdOverlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+
+.mintContainer{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 400px;
+
+    
+    
+}
+
+
+/* CLOCK */
+.clock{
+    font-family: 'Press Start 2P', sans-serif;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 ;
+    width: 450px;
+    padding: 4% 0%;
+    color: #F1c30f;
+    text-shadow: 1px 1px 7px #F1c30f;
+    border-radius: 15px;
+    border: 2px solid silver;
+    box-shadow: 0 0 20px 2px;
+    margin-bottom: 6%;
+}
+
+.timer-container{
+    display: grid;
+    justify-content: center;
+}
+
+.clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.clock section p{
+    font-size: 100%;
+}
+
+.clock section small{
+    padding-top: 8%;
+    font-size: 1rem;
+    color: silver;
+    text-shadow: none;
+}
+
+/* CLOCK END */
