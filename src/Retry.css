@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@300;400&display=swap');
+
+.whole{
+    background-color: #020d2a;
+}
+
+.nav{
+    display: flex;
+}
+
+.navImg{
+    width: 170px;
+    padding-left: 15px;
+}
+
+.mainScreen{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.topDivs h1{
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    line-height: 30px;
+    padding: 130px 30px 40px 30px;
+    font-size: 20px;
+}
+
+.mintButtonOne{
+    position: relative;
+    display: flex;
+    background-color: white;
+    padding: 13px 17px;
+    align-items: center;
+    left:50%;
+    transform: translateX(-50%);
+    font-family: 'Press Start 2P', sans-serif;
+    letter-spacing: 0px;
+    font-size: 18px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    border-radius: 20px;
+    width: fit-content;
+    border: #F1c30f 3px solid ;
+    color: #222222;
+    box-shadow: #F1c30f 0px 0px 20px;
+}
+
+.lock{
+    display: flex;
+    width: 17px;
+    align-self: center;
+    color: #222222;
+    margin-left: 5px;
+}
+
+.discord{
+    
+    width:25px;
+    margin-right: 5px;
+    color: #5865F2;
+    
+}
+
+.discordButton{
+    position: relative;
+    display: flex;
+    background-color: white;
+    padding: 10px 15px;
+    align-items: center;
+    left:50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    border: none;
+    font-family: 'Press Start 2P', sans-serif;
+    letter-spacing: 0px;
+    font-size: 10px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: fit-content;
+    border:#5865F2 solid 3px; 
+}
+.topDivs a{
+    text-decoration: none;
+    color: black;
+}
+
+.bottomDivs{
+    padding: 0px 100px;
+}
+.twitter{
+    color: #1DA1F2;
+    width: 40px;
+    background-color: white;
+    padding:6px;
+    border-radius: 7px;
+    border:#1DA1F2 solid 3px;
+    margin-right: 20px; 
+}
+
+.instagram{
+    color: rgb(131, 58, 180);
+    width: 40px;
+    background-color: white;
+    padding: 5px 6px;
+    border-radius: 7px;
+    border:rgb(131, 58, 180) solid 3px; 
+}
+
+
+
+/* CLOCK */
+.clock{
+    font-family: 'Press Start 2P', sans-serif;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F1c30f;
+    text-shadow: 1px 1px 7px #F1c30f;
+    margin-bottom: 20px;
+}
+
+.timer-container{
+    display: grid;
+    justify-content: center;
+}
+
+.clock section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.clock section p{
+    font-size: 20px;
+    
+}
+
+.clock section small{
+    padding-top: 30px;
+    font-size: 15px;
+    color: silver;
+    text-shadow: none;
+}
+
+/* CLOCK END */
+
+.aboutSection{
+    
+    padding:100px 20px;
+}
+.transparentbull{
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.aboutSection div h1{
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+.aboutSection div p{
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    line-height: 22px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.aboutSection div a{
+    position: relative;
+    font-family: 'Press Start 2P', sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    letter-spacing: 0px;
+    font-size: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    border:#F1c30f solid 3px ;
+    
+}
+
+.astrobull{
+    display:none;
+}
+
+
+.bullgif{
+    width: 250px;
+}
+
+.combo{
+    display: flex;
+    padding: 50px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle{
+    
+    font-family: 'Press Start 2P', sans-serif;
+    letter-spacing: 0px;
+    background: #F1c30f;
+    box-shadow: rgb(255, 255, 255) 0px 0px 15px;
+    margin:13px 8px;
+    border-radius: 10px;
+    width: 120px;
+    padding: 6px 0px;
+}
+
+.circle h1{
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+.circle p{
+    font-size: 7px;
+}
+
+
+
+.phaseh1{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.phaseText h1{
+    color: #ffffff;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+}
+
+.phaseP{
+    color: rgb(124, 124, 124);
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.phaseimg{
+    width: 175px;
+    align-items: center;
+}
+
+.phaseText p:last-child{
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    line-height: 17px;
+}
+
+.phases{
+    padding: 0px 20px;
+    
+}
+
+.phase{
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+    gap: 10px;
+}
+
+.imglast{
+    flex-direction: row-reverse;
+}
+
+
+.teambull{
+    width: 125px;
+    background-color: #222222;
+    border-radius: 50%;
+    border: #ffffff 5px solid;
+}
+
+.teamTitle{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    font-family: 'Press Start 2P', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+.team h1{
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.team p{
+    color: rgb(214, 214, 214);
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+}
+
+.teammate{
+    margin: 20px;
+}
+
+.angle-down{
+    width: 13px;
+    color: #F1c30f;
+    
+}
+
+.angle-up{
+    width: 13px;
+    color: #F1c30f;
+    display: none;
+}
+
+.faq{
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 100px;
+  }
+  .accordion-item {
+    background-color: rgb(34, 34, 34);
+    color: rgb(214, 214, 214);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #F1c30f, transparent) 1;
+  }
