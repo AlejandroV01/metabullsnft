@@ -12,8 +12,8 @@ function App() {
   
     <Router>
       <Routes>
-        <Route path="/" element={<Retry />} />
-        <Route path="/mint" element={<Mint />} />
+        <Route  exact path="/" exact element={<Retry />} />
+        <Route  exact path="/mint" exact element={<Mint />} />
       </Routes>
     </Router>
   
