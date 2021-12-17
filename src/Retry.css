@@ -7,12 +7,14 @@ html, body{
 .whole{
     background-color: #020d2a;
     height: 100%;
-    overflow: hidden;
-    
 }
 
 .nav{
     display: flex;
+}
+
+.navMenu{
+    display: none;
 }
 
 .navImg{
@@ -46,7 +48,7 @@ html, body{
     font-size: 18px;
     margin-bottom: 70px;
     margin-top: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     width: fit-content;
     border: #F1c30f 3px solid ;
     color: #222222;
@@ -84,7 +86,7 @@ html, body{
     font-size: 10px;
     margin-bottom: 70px;
     margin-top: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     width: fit-content;
     border:#5865F2 solid 3px; 
@@ -145,15 +147,16 @@ html, body{
 }
 
 .clock section p{
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
 .clock section small{
-    padding-top: 30px;
-    font-size: 15px;
+    padding-top: 20px;
+    font-size: 12px;
     color: silver;
     text-shadow: none;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* CLOCK END */
@@ -191,7 +194,7 @@ html, body{
     letter-spacing: 0px;
     font-size: 10px;
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-bottom: 10px;
     border:#F1c30f solid 3px ;
     
@@ -204,6 +207,7 @@ html, body{
 
 .bullgif{
     width: 250px;
+    border-radius: 10px;
 }
 
 .combo{
@@ -248,6 +252,7 @@ html, body{
     color: #ffffff;
     font-family: 'Press Start 2P', sans-serif;
     font-size: 14px;
+    margin-bottom: 7px;
 }
 
 .phaseP{
@@ -307,33 +312,33 @@ html, body{
     justify-content: center;
     padding: 0px 20px;
     padding-bottom: 20px;
-}
+    }
 
-.team h1{
+    .team h1{
     color: white;
     font-family: 'Press Start 2P', sans-serif;
     font-size: 14px;
     margin: 5px 0px;
-}
+    }
 
-.team p{
+    .team p{
     color: rgb(214, 214, 214);
     font-family: 'Rubik', sans-serif;
     font-size: 12px;
-}
+    }
 
-.teammate{
+    .teammate{
     margin: 20px;
-}
+    }
 
-.faq{
+    .faq{
     color: white;
     font-family: 'Press Start 2P', sans-serif;
     font-size: 18px;
     margin: 30px 0px;
-}
+    }
 
-.accordion {
+    .accordion {
     width: 90%;
     max-width: 1000px;
     margin: 0rem auto;
@@ -422,12 +427,21 @@ html, body{
   .joinDiscord{
     background: #5865F2;
     color: whitesmoke;
+    transition: ease-in-out 0.4s;
   }
 
+  .joinDiscord:hover{
+      background-color: #4752c7;
+      transition: ease-in-out 0.4s;
+  }
   .comingSoon{
       background: #F1c30f;
       color: rgb(0, 0, 0);
-      
+      transition: ease-in-out 0.4s;
+  }
+  .comingSoon:hover{
+      background-color: #bd990b;
+      transition: ease-in-out 0.4s;
   }
 
 
@@ -441,7 +455,7 @@ html, body{
     flex-direction: column;
     align-items: center;
     
-}
+   }
 
   .footerLogo{
       margin-top: 50px;
@@ -513,4 +527,269 @@ html, body{
   .instagramFooter:hover{
     color: rgb(131, 58, 180);
     transition: ease-in-out 0.35s;
+    }
+
+    .gridImg{
+        display: none;
+    }
+
+    @media (min-width: 1000px){
+
+        .navImg{
+            width: 225px;
+            margin-left: 50px;
+        }
+        .nav{
+            top: 0;
+            position: sticky;
+            background-color: #020c29d8;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border-top: #F1c30f 2px solid;
+            
+        }
+        .navMenu{
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-grow: 1;
+            margin-right: 100px;
+            padding: 30px 0px;
+        }
+
+        .navMenu a{
+            text-decoration: none;
+            font-family: 'Press Start 2P', sans-serif;
+            font-weight: 400;
+            color:#ffffff;
+            margin-right: 50px;
+            font-size: 16px;
+            padding: 2px;
+        }
+
+        .navMenu a:hover{
+            text-shadow: #ffffff 0px 0px 5px;
+            
+        }
+        
+        .navMenu a:last-child{
+            color: black;
+            border: 3px solid white;
+            padding:10px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: ease-in-out 0.4s;
+            background: white;
+        }
+    
+        .navMenu a:last-child:hover{
+            background-color: transparent;
+            border: 3px solid #ffffff;
+            color: white;
+            transition: ease-in-out 0.4s;
+        }
+
+        .gridImg{
+            display: block;
+        }
+        .gridImgAstro{
+            width: 475px;
+        }
+        
+        .mainScreen{
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 0.1fr;
+            padding: 0px 150px;
+            
+        }
+        
+        .topDivs{
+            background-color: #01040e;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .bottomDivs{
+            background-color: #01040e;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .topDivs h1{
+            font-size: 22px;
+        }
+
+        /* CLOCK */
+        .clock section{
+            padding: 10px 20px;
+        }
+
+        .clock section p{
+            font-size: 37px;
+
+        }
+
+        .clock section small{
+            padding-top: 25px;
+            font-size: 15px;
+        }
+
+        /* CLOCK END */
+
+        .mintButtonOne{
+            font-size: 20px;
+        }
+        .discordButton{
+            font-size: 13px;
+        }
+
+        
+        .discord{
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .bottomDivs{
+            padding-bottom: 15px;
+        }
+
+        .twitter{
+            width: 45px;
+            height: 45px;
+        }
+
+        .instagram{
+            width: 45px;
+            height: 45px;
+        }
+
+
+        .aboutSection{
+            padding-top: 150px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+        .astrobull{
+            display: block;
+            width: 500px;
+        }
+
+        .transparentbull{
+            width: 500px;
+        }
+
+        .aboutSection{
+            padding-bottom: 20px;
+            
+        }
+        .aboutSection div h1{
+            font-size: 30px;
+        }
+
+        .aboutSection div p{
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 50px;
+        }
+
+        .aboutSection div a{
+            font-size: 15px;
+        }
+
+        .comboSection{
+            padding: 40px 0px;
+            background-color: #01040e;
+        }
+        .bullgif{
+            width: 400px;
+        }
+
+        .circle{
+            width: fit-content;
+            padding:15px 12px;
+            margin:13px 20px;
+        }
+        .circle h1{
+            font-size: 20px;
+        }
+        .circle p{
+            font-size: 8px;
+        }
+        
+        .phaseh1{
+            font-size: 30px;
+        }
+
+        .phases{
+            display: flex;
+            flex-direction: column;
+            margin: 0px 25%;
+            padding: 10px 100px;
+            margin-bottom: 1px;
+            background-color: #01040e;
+            margin-bottom: 50px;
+            border-radius: 30px;
+        }
+
+        .phaseText h1{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .phaseP{
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+        .phaseText:last-child{
+            font-size: 16px;
+        }
+
+        .phase{
+            margin-bottom: 50px;
+            gap: 10px;
+        }
+
+        .phaseimg{
+            width: 250px;
+        }
+
+
+
+        .teamTitle{
+            font-size: 30px;
+        }
+
+        .teamSection{
+            background-color: #01040e;
+            padding-top: 30px;
+        }
+
+        .teammate img{
+            width: 160px;
+        }
+        .teammate h1{
+            font-size: 20px;
+        }
+        .teammate p{
+            font-size: 13px;
+        }
+
+        .faq{
+            font-size: 30px;
+            padding-top: 30px;
+        }
+
+        .actionSection h1{
+            font-size: 30px;
+        }
+        .actionSection p{
+            font-size: 18px;
+            padding: 0px 15%;
+        }
     }

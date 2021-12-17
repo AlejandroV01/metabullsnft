@@ -87,15 +87,25 @@ function Retry() {
     <div class='whole'>
 
         <div className="nav">
-            <a href="/home.js" ><img class="navImg" src={logoish} alt="" /></a>
+            <a href="https://metabulls.com" ><img class="navImg" src={logoish} alt="" /></a>
+            <div className="navMenu">
+                <a href="#about" class='navmenu'>ABOUT</a>
+                <a href="#roadmap" class='navmenu'>ROADMAP</a>
+                <a href="#team" class='navmenu'>TEAM</a>
+                <a href="#faq" class='navmenu'>FAQ</a>
+                <a href="https://metabulls.com" class='navmenu'>MINT</a>
+            </div>
         </div>
 
         <div className="mainScreen">
             <div className="topDivs">
-                <h1>OWN, TRADE, GAIN PERKS AND EARN WITH META BULLS</h1>
+                <h1>OWN,TRADE,GAIN PERKS AND EARN WITH META BULLS</h1>
                 <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
                 <a href="/Mint.js" class='mintButtonOne' target='_blank' rel='noreferrer'>MINT<FontAwesomeIcon class='lock' icon={['fas', 'lock']} /></a>
-                <a href="https://google.com" class='discordButton' target='_blank' rel='noreferrer'><FontAwesomeIcon class='discord' icon={['fab', 'discord']} />JOIN OUR DISCORD</a>
+                <a href="https://discord.gg/QetE7BEJQZ" class='discordButton' target='_blank' rel='noreferrer'><FontAwesomeIcon class='discord' icon={['fab', 'discord']} />JOIN OUR DISCORD</a>
+            </div>
+            <div className="gridImg">
+                <img src={astrobull} alt="" class='gridImgAstro'/>
             </div>
             <div className="bottomDivs">
             <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitterButton'><FontAwesomeIcon class='twitter' icon={['fab', 'twitter']} /></a>
@@ -103,7 +113,7 @@ function Retry() {
             </div>
         </div>
         
-        <div className="aboutSection">
+        <div className="aboutSection" id='about'>
             <img src={transparentbull} alt="" class='transparentbull'/>
             <div>
                 <h1>ABOUT</h1>
@@ -137,7 +147,7 @@ function Retry() {
         </div>
 
 
-        <div className="phaseSection">
+        <div id='roadmap'className="phaseSection">
 
             <h1 class='phaseh1'>ROADMAP</h1>
             <div className="phases">
@@ -191,7 +201,7 @@ function Retry() {
             </div>
         </div>
 
-    <div className="teamSection">
+        <div id='team'className="teamSection">
         <h1 class='teamTitle'>THE TEAM</h1>
         <div className="team">
             <div className="teammate">
@@ -216,11 +226,11 @@ function Retry() {
             </div>
         </div>
 
-    </div>
+        </div>
 
 
-<h1 class='faq'>FAQ</h1>
-<div class="accordion">
+        <h1 id='faq'class='faq'>FAQ</h1>
+        <div class="accordion">
   <div class="accordion-item">
     <div class="accordion-item-header">
         How many Meta Bulls can I mint at a time?
@@ -274,35 +284,35 @@ function Retry() {
       </div>
     </div>
   </div>
-</div>
+        </div>
 
 
-<div className="actionSection">
+        <div className="actionSection">
     <h1>JOIN THE ORGANIZATION</h1>
     <p>
         Ladies and Gentlemen. 
         Join the Discord and the Telegram to participate to exclusive events/giveaways and get all the news as soon as possible. 
         Aim bullish and join the Meta Bulls!
     </p>
-    <a href="https://google.com"><button class='joinDiscord'>Join our Discord</button></a>
+    <a href="https://discord.gg/QetE7BEJQZ"><button class='joinDiscord'>Join our Discord</button></a>
     <a href="https://google.com"><button class='comingSoon'>Coming Soon!</button></a>
-</div>
+        </div>
 
 
-<div className="footerSection">
-    <img src={logoish} alt="" class='footerLogo'/>
+        <div className="footerSection">
+    <a href="https://metabulls.com"><img src={logoish} alt="" class='footerLogo'/></a>
     <p class='footerPraise'>OWN, TRADE, WIN, and EARN WITHIN THE META BULL COMMUNITY</p>
     <p class='smartcontractText'>SMART CONTRACT</p>
     <p className="smartcontractCode">0x00000000000</p>
     <p class='smartcontractText'>FOLLOW US ON</p>
     <div className="footerSocial">
-    <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='discordButtonFooter'><FontAwesomeIcon class='socialmediaFooter discordFooter' icon={['fab', 'discord']} /></a>
+    <a href="https://discord.gg/QetE7BEJQZ" target="_blank" rel="noreferrer" class='discordButtonFooter'><FontAwesomeIcon class='socialmediaFooter discordFooter' icon={['fab', 'discord']} /></a>
     <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitterButtonFooter'><FontAwesomeIcon class='socialmediaFooter twitterFooter' icon={['fab', 'twitter']} /></a>
     <a href="https://instagram.com/metabullsnft/" target="_blank" rel="noreferrer" class='instagramButtonFooter'><FontAwesomeIcon class='socialmediaFooter instagramFooter' icon={['fab', 'instagram']} /></a>
     </div>
-</div>
+        </div>
 
-</div>
+    </div>
     )
 }
 
