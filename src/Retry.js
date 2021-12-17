@@ -277,8 +277,30 @@ function Retry() {
 </div>
 
 
+<div className="actionSection">
+    <h1>JOIN THE ORGANIZATION</h1>
+    <p>
+        Ladies and Gentlemen. 
+        Join the Discord and the Telegram to participate to exclusive events/giveaways and get all the news as soon as possible. 
+        Aim bullish and join the Meta Bulls!
+    </p>
+    <a href="https://google.com"><button class='joinDiscord'>Join our Discord</button></a>
+    <a href="https://google.com"><button class='comingSoon'>Coming Soon!</button></a>
+</div>
 
 
+<div className="footerSection">
+    <img src={logoish} alt="" class='footerLogo'/>
+    <p class='footerPraise'>OWN, TRADE, WIN, and EARN WITHIN THE META BULL COMMUNITY</p>
+    <p class='smartcontractText'>SMART CONTRACT</p>
+    <p className="smartcontractCode">0x00000000000</p>
+    <p class='smartcontractText'>FOLLOW US ON</p>
+    <div className="footerSocial">
+    <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='discordButtonFooter'><FontAwesomeIcon class='socialmediaFooter discordFooter' icon={['fab', 'discord']} /></a>
+    <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitterButtonFooter'><FontAwesomeIcon class='socialmediaFooter twitterFooter' icon={['fab', 'twitter']} /></a>
+    <a href="https://instagram.com/metabullsnft/" target="_blank" rel="noreferrer" class='instagramButtonFooter'><FontAwesomeIcon class='socialmediaFooter instagramFooter' icon={['fab', 'instagram']} /></a>
+    </div>
+</div>
 
 </div>
     )

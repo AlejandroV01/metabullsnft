@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@300;400;500&display=swap');
 
 .whole{
     background-color: #020d2a;
@@ -319,18 +319,6 @@
     margin: 20px;
 }
 
-.angle-down{
-    width: 13px;
-    color: #F1c30f;
-    
-}
-
-.angle-up{
-    width: 13px;
-    color: #F1c30f;
-    display: none;
-}
-
 .faq{
     color: white;
     font-family: 'Press Start 2P', sans-serif;
@@ -341,7 +329,7 @@
 .accordion {
     width: 90%;
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 0rem auto;
     font-family: 'Rubik', sans-serif;
     padding-bottom: 100px;
   }
@@ -382,3 +370,140 @@
     border-top: 1px solid;
     border-image: linear-gradient(to right, transparent, #F1c30f, transparent) 1;
   }
+
+
+  .actionSection{
+    background-color: #01040e;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .actionSection h1{
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 18px;
+    margin: 30px 0px;
+    line-height: 30px;
+    padding-top: 35px;
+  }
+
+  .actionSection p{
+    color: rgb(221, 221, 221);
+    font-family: 'Rubik', sans-serif;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+
+  .actionSection button{
+      padding: 18px;
+      display: block;
+      width: 200px;
+      border: none;
+      margin-bottom: 10px;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  .actionSection a{
+    text-decoration: none;
+  }
+  .joinDiscord{
+    background: #5865F2;
+    color: whitesmoke;
+  }
+
+  .comingSoon{
+      background: #F1c30f;
+      color: rgb(0, 0, 0);
+      
+  }
+
+
+  .footerSection{
+      padding-bottom: 25px;
+  }
+  .footerSection p{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+  .footerLogo{
+      margin-top: 50px;
+      width: 250px;
+  }
+
+  
+  .footerPraise{
+      color: rgb(175, 175, 175);
+      font-size: 13px;
+      margin-bottom: 75px;
+  }
+
+  .smartcontractText{
+      color: rgb(211, 211, 211);
+      font-weight: 500;
+      margin-bottom: 10px;
+  }
+
+  .smartcontractCode{
+      position: relative;
+      background: rgb(34, 34, 34);
+      width: fit-content;
+      left:50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      border-radius: 7px;
+      color: rgb(211, 211, 211);
+      margin-bottom: 50px;
+  }
+
+  
+
+  .socialmediaFooter{
+    width: 45px;
+    background-color: rgb(241, 241, 241);
+    padding: 7px;
+    border-radius: 10px;
+    height: 45px;
+    margin-top: 10px;
+    
+  }
+
+
+  .discordFooter{
+    color: rgb(20, 20, 20);
+    transition: ease-in-out 0.35s;
+  }
+    .discordFooter:hover{
+    color: #5865F2;
+    transition: ease-in-out 0.35s;
+    }
+
+  .twitterFooter{
+      color: rgb(20, 20, 20);
+      margin: 0px 20px;
+      transition: ease-in-out 0.35s;
+  }
+  .twitterFooter:hover{
+    color: #1DA1F2;
+    margin: 0px 20px;
+    transition: ease-in-out 0.35s;
+    }
+
+  .instagramFooter{
+      color: rgb(20, 20, 20);
+      transition: ease-in-out 0.35s;
+  }
+  .instagramFooter:hover{
+    color: rgb(131, 58, 180);
+    transition: ease-in-out 0.35s;
+    }
