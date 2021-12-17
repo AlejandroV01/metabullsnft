@@ -82,18 +82,28 @@ function Retry() {
   });
 });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
     return (
 
     <div class='whole'>
 
         <div className="nav">
-            <a href="https://metabulls.com" ><img class="navImg" src={logoish} alt="" /></a>
+            <a href="https://metabullsnft.com/" ><img class="navImg" src={logoish} alt="" /></a>
             <div className="navMenu">
                 <a href="#about" class='navmenu'>ABOUT</a>
                 <a href="#roadmap" class='navmenu'>ROADMAP</a>
                 <a href="#team" class='navmenu'>TEAM</a>
                 <a href="#faq" class='navmenu'>FAQ</a>
-                <a href="https://metabulls.com" class='navmenu'>MINT</a>
+                <a href="https://metabullsnft.com/mint" class='navmenu'>MINT</a>
             </div>
         </div>
 
@@ -108,14 +118,16 @@ function Retry() {
                 <img src={astrobull} alt="" class='gridImgAstro'/>
             </div>
             <div className="bottomDivs">
+            <div className="mainSocial">
             <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitterButton'><FontAwesomeIcon class='twitter' icon={['fab', 'twitter']} /></a>
             <a href="https://instagram.com/metabullsnft/" target="_blank" rel="noreferrer" class='instagramButton'><FontAwesomeIcon class='instagram' icon={['fab', 'instagram']} /></a>
+            </div>
             </div>
         </div>
         
         <div className="aboutSection" id='about'>
             <img src={transparentbull} alt="" class='transparentbull'/>
-            <div>
+            <div class="aboutText">
                 <h1>ABOUT</h1>
                 <p>The birth of VOXXTIES to the metaverse is about introducing a new generation to a world of their own. The idea is to build a virtual lineage by acquiring two 
                     VOXXTIES to breed baby VOXXTIES. Your baby VOXXTIES can then be utilized to unlock missions, engage in battles and play to earn all within the Metaverse.</p>

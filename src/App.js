@@ -3,13 +3,21 @@ import './FontAwesome/index.js'
 //import logo from "./logo.svg"
 import "./App.css";
 import Retry from './Retry.js';
-//import HomeAgain from "./HomeAgain";
-//import Mint from "./Mint";
+import Mint from './Mint.js'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 function App() {
-  return <div className="App">
-    <Retry />
-  </div>;
+  return (
+  
+    <Router>
+      <Routes>
+        <Route path="/" element={<Retry />} />
+        <Route path="/mint" element={<Mint />} />
+      </Routes>
+    </Router>
+  
+  );
 }
 
 export default App;

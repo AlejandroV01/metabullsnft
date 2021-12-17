@@ -25,6 +25,7 @@ html, body{
 .mainScreen{
     display: grid;
     grid-template-rows: auto auto;
+    justify-items: center;
 }
 
 .topDivs h1{
@@ -33,6 +34,7 @@ html, body{
     line-height: 30px;
     padding: 130px 30px 40px 30px;
     font-size: 20px;
+    text-align: center;
 }
 
 .mintButtonOne{
@@ -162,9 +164,16 @@ html, body{
 /* CLOCK END */
 
 .aboutSection{
-    
+    display: flex;
     padding:100px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.aboutText{
+    text-align: center;
+}
+
 .transparentbull{
     width: 250px;
     margin-bottom: 50px;
@@ -210,11 +219,19 @@ html, body{
     border-radius: 10px;
 }
 
+.comboSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .combo{
     display: flex;
     padding: 50px 50px;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 .circle{
@@ -246,8 +263,11 @@ html, body{
     font-family: 'Press Start 2P', sans-serif;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
-
+.phaseText{
+    text-align: center;
+}
 .phaseText h1{
     color: #ffffff;
     font-family: 'Press Start 2P', sans-serif;
@@ -303,6 +323,7 @@ html, body{
     font-family: 'Press Start 2P', sans-serif;
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 
 .team{
@@ -312,6 +333,7 @@ html, body{
     justify-content: center;
     padding: 0px 20px;
     padding-bottom: 20px;
+    text-align: center;
     }
 
     .team h1{
@@ -336,6 +358,7 @@ html, body{
     font-family: 'Press Start 2P', sans-serif;
     font-size: 18px;
     margin: 30px 0px;
+    text-align: center;
     }
 
     .accordion {
@@ -344,6 +367,7 @@ html, body{
     margin: 0rem auto;
     font-family: 'Rubik', sans-serif;
     padding-bottom: 100px;
+    text-align: center;
   }
   .accordion-item {
     background-color: rgb(34, 34, 34);
@@ -392,6 +416,7 @@ html, body{
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
+    text-align: center;
   }
 
   .actionSection h1{
@@ -447,6 +472,7 @@ html, body{
 
   .footerSection{
       padding-bottom: 25px;
+      text-align: center;
   }
   .footerSection p{
     font-family: 'Rubik', sans-serif;
@@ -616,6 +642,13 @@ html, body{
             background-color: #01040e;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
+            width: 100%;
+            
+        }
+
+        .mainSocial{
+            left:0;
+            transform: translateX(40%);
         }
 
         .topDivs h1{
@@ -689,21 +722,34 @@ html, body{
         }
         .aboutSection div h1{
             font-size: 30px;
+            text-align: center;
         }
 
         .aboutSection div p{
             font-size: 16px;
             line-height: 30px;
             margin-bottom: 50px;
+            text-align: center;
         }
 
         .aboutSection div a{
             font-size: 15px;
+            width: fit-content;
         }
 
+        .aboutText{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .comboSection{
             padding: 40px 0px;
             background-color: #01040e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .bullgif{
             width: 400px;
@@ -713,6 +759,7 @@ html, body{
             width: fit-content;
             padding:15px 12px;
             margin:13px 20px;
+            text-align: center;
         }
         .circle h1{
             font-size: 20px;
@@ -723,6 +770,7 @@ html, body{
         
         .phaseh1{
             font-size: 30px;
+            text-align: center;
         }
 
         .phases{
@@ -734,6 +782,7 @@ html, body{
             background-color: #01040e;
             margin-bottom: 50px;
             border-radius: 30px;
+            text-align: center;
         }
 
         .phaseText h1{
@@ -763,6 +812,7 @@ html, body{
 
         .teamTitle{
             font-size: 30px;
+            text-align: center;
         }
 
         .teamSection{
