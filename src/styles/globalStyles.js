@@ -63,7 +63,7 @@ font-size: 20px;
 font-weight: 500;
 font-family: 'Press Start 2P', sans-serif;
 padding-top: 20px;
-
+line-height:30px;
 `;
 
 export const TextSubTitle = styled.p`

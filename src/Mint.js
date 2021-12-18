@@ -32,14 +32,14 @@ export const ResponsiveWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: #01040e;
+  background-color: #020d2a;
   justify-content: stretched;
   align-items: stretched;
   
   @media (min-width: 767px) {
     flex-direction: row;
   }
-  width: 70%;
+  
   
   
 `;
@@ -105,7 +105,7 @@ function Mint() {
  
 
   return (
-    <s.Screen style={{ backgroundColor: "#01040e" }}>
+    <s.Screen style={{ backgroundColor: "#020d2a" }}>
       <s.Container flex={1} ai={"center"} style={{ padding: 0 }}>
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 28, fontWeight: "bold", color: "white"}}
@@ -128,7 +128,7 @@ function Mint() {
             flex={1}
             jc={"center"}
             ai={"center"}
-            style={{ backgroundColor: "#01040e", padding: 24 }}
+            style={{ backgroundColor: "#020d2a", padding: 24 }}
           >
             {Number(data.totalSupply) === 5000 ? (
               <>
@@ -150,8 +150,9 @@ function Mint() {
             ) : (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
-                  1 META BULL COSTS 0.2 ETH.
+                  PRE-SALE 0.1ETH
                 </s.TextTitle>
+                
                 <s.SpacerXSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
                   
