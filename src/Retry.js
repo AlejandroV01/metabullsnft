@@ -110,7 +110,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             <div className="topDivs">
                 <h1>OWN,TRADE,GAIN PERKS AND EARN WITH META BULLS</h1>
                 <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
-                <a href="/Mint.js" class='mintButtonOne' target='_blank' rel='noreferrer'>MINT<FontAwesomeIcon class='lock' icon={['fas', 'lock']} /></a>
+                <a href="/mint" class='mintButtonOne' target='_blank' rel='noreferrer'>MINT<FontAwesomeIcon class='lock' icon={['fas', 'lock']} /></a>
                 <a href="https://discord.gg/QetE7BEJQZ" class='discordButton' target='_blank' rel='noreferrer'><FontAwesomeIcon class='discord' icon={['fab', 'discord']} />JOIN OUR DISCORD</a>
                 <div className="mainSocial">
                     <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitterButton'><FontAwesomeIcon class='twitter' icon={['fab', 'twitter']} /></a>
