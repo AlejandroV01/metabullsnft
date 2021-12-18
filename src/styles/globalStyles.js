@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 // Used for wrapping a page component
 export const Screen = styled.div`
   background-color: var(--dark-grey);
@@ -10,6 +11,10 @@ export const Screen = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top:50px;
+  padding-bottom:50px;
+  
+  
 `;
 
 // Used for providing space between components
@@ -26,8 +31,8 @@ export const SpacerSmall = styled.div`
 
 // Used for providing space between components
 export const SpacerMedium = styled.div`
-  height: 24px;
-  width: 24px;
+height: 24px;
+width: 24px;
 `;
 
 // Used for providing space between components
@@ -48,12 +53,17 @@ export const Container = styled.div`
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
+  
+  
 `;
 
 export const TextTitle = styled.p`
-  color: var(--white);
-  font-size: 20px;
-  font-weight: 500;
+color: var(--white);
+font-size: 20px;
+font-weight: 500;
+font-family: 'Press Start 2P', sans-serif;
+padding-top: 20px;
+
 `;
 
 export const TextSubTitle = styled.p`
@@ -65,7 +75,8 @@ export const TextSubTitle = styled.p`
 export const TextDescription = styled.p`
   color: var(--white);
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
 `;
 
 export const StyledClickable = styled.div`

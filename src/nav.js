@@ -12,7 +12,7 @@ function Nav() {
                 <a href="#roadmap" class='navmenu'>ROADMAP</a>
                 <a href="#team" class='navmenu'>TEAM</a>
                 <a href="#faq" class='navmenu'>FAQ</a>
-                <Link to='/mint'><a href="https://metabullsnft.com/mint" class='navmenu'>MINT</a></Link>
+                <Link to='/mint' class='linkMint'><a href="https://metabullsnft.com/mint" class='navmenu navMint'>MINT</a></Link>
             </div>
         </div>
     )

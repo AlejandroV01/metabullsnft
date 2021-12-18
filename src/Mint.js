@@ -5,6 +5,7 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import i1 from "./assets/images/33.png";
+import './Retry.css'; 
 
 export const StyledButton = styled.button`
   margin-left:8px;
@@ -31,13 +32,16 @@ export const ResponsiveWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: #399e9e;
+  background-color: #01040e;
   justify-content: stretched;
   align-items: stretched;
-  width: 100%;
+  
   @media (min-width: 767px) {
     flex-direction: row;
   }
+  width: 70%;
+  
+  
 `;
 
 export const StyledImg = styled.img`
@@ -55,7 +59,7 @@ function Mint() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
-  const [feedback, setFeedback] = useState("Maybe it's your lucky day.");
+  const [feedback, setFeedback] = useState("");
   const [claimingNft, setClaimingNft] = useState(false);
 
   const claimNFTs = (_amount) => {
@@ -101,12 +105,12 @@ function Mint() {
  
 
   return (
-    <s.Screen style={{ backgroundColor: "var(--white)" }}>
-      <s.Container flex={1} ai={"center"} style={{ padding: 24 }}>
+    <s.Screen style={{ backgroundColor: "#01040e" }}>
+      <s.Container flex={1} ai={"center"} style={{ padding: 0 }}>
         <s.TextTitle
-          style={{ textAlign: "center", fontSize: 28, fontWeight: "bold", color: "black" }}
+          style={{ textAlign: "center", fontSize: 28, fontWeight: "bold", color: "white"}}
         >
-          Mint a Meta Bull
+          MINT A META BULL
         </s.TextTitle>
         <s.SpacerMedium />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }}>
@@ -124,7 +128,7 @@ function Mint() {
             flex={1}
             jc={"center"}
             ai={"center"}
-            style={{ backgroundColor: "#399e9e", padding: 24 }}
+            style={{ backgroundColor: "#01040e", padding: 24 }}
           >
             {Number(data.totalSupply) === 5000 ? (
               <>
@@ -133,7 +137,7 @@ function Mint() {
                 </s.TextTitle>
                 <s.SpacerSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
-                  You can still find Nerdy Coder Clones on{" "}
+                  You can still find Meta Bulls on{" "}
                   <a
                     target={"_blank"}
                     rel = {"noreferrer"}
@@ -146,11 +150,11 @@ function Mint() {
             ) : (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
-                  1 Meta Bull costs 0.2 ETH.
+                  1 META BULL COSTS 0.2 ETH.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
-                  _________________
+                  
                 </s.TextDescription>
                 <s.SpacerSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
@@ -212,12 +216,12 @@ function Mint() {
         </ResponsiveWrapper>
         <s.SpacerSmall />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription style={{ textAlign: "center", fontSize: 9 }}>
+          <s.TextDescription style={{ textAlign: "center", fontSize: 12 }}>
             Please make sure you are connected to the right network and the correct address. Please note: Once you make the
             purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription style={{ textAlign: "center", fontSize: 9 }}>
+          <s.TextDescription style={{ textAlign: "center", fontSize: 12 }}>
             We have set the gas limit to 285000 for the contract to successfully
             mint your NFT. We recommend that you don't change the gas limit.
           </s.TextDescription>
