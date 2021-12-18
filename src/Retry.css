@@ -32,7 +32,7 @@ html, body{
     font-family: 'Press Start 2P', sans-serif;
     color: white;
     line-height: 30px;
-    padding: 130px 30px 40px 30px;
+    padding: 0px 30px 40px 30px;
     font-size: 20px;
     text-align: center;
 }
@@ -43,8 +43,7 @@ html, body{
     background-color: white;
     padding: 13px 17px;
     align-items: center;
-    left:50%;
-    transform: translateX(-50%);
+    
     font-family: 'Press Start 2P', sans-serif;
     letter-spacing: 0px;
     font-size: 18px;
@@ -79,8 +78,6 @@ html, body{
     background-color: white;
     padding: 10px 15px;
     align-items: center;
-    left:50%;
-    transform: translateX(-50%);
     text-decoration: none;
     border: none;
     font-family: 'Press Start 2P', sans-serif;
@@ -93,14 +90,20 @@ html, body{
     width: fit-content;
     border:#5865F2 solid 3px; 
 }
+
 .topDivs a{
     text-decoration: none;
     color: black;
 }
 
-.bottomDivs{
-    padding: 0px 100px;
+.topDivs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
+
 .twitter{
     color: #1DA1F2;
     width: 40px;
@@ -617,39 +620,31 @@ html, body{
         }
 
         .gridImg{
+            
             display: block;
+            
         }
         .gridImgAstro{
-            width: 475px;
+            width: 600px;
+
         }
         
         .mainScreen{
             margin-top: 25px;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 0.1fr;
+            grid-template-rows: 1fr;
             padding: 0px 150px;
+            align-items: center;
             
         }
         
         .topDivs{
             background-color: #01040e;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
+            border-radius: 30px;
+            padding: 70px 0px;
         }
 
-        .bottomDivs{
-            background-color: #01040e;
-            border-bottom-left-radius: 30px;
-            border-bottom-right-radius: 30px;
-            width: 100%;
-            
-        }
-
-        .mainSocial{
-            left:0;
-            transform: translateX(40%);
-        }
 
         .topDivs h1{
             font-size: 22px;
@@ -683,10 +678,6 @@ html, body{
         .discord{
             width: 30px;
             margin-right: 10px;
-        }
-
-        .bottomDivs{
-            padding-bottom: 15px;
         }
 
         .twitter{

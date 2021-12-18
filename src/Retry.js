@@ -113,15 +113,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
                 <a href="/Mint.js" class='mintButtonOne' target='_blank' rel='noreferrer'>MINT<FontAwesomeIcon class='lock' icon={['fas', 'lock']} /></a>
                 <a href="https://discord.gg/QetE7BEJQZ" class='discordButton' target='_blank' rel='noreferrer'><FontAwesomeIcon class='discord' icon={['fab', 'discord']} />JOIN OUR DISCORD</a>
+                <div className="mainSocial">
+                    <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitterButton'><FontAwesomeIcon class='twitter' icon={['fab', 'twitter']} /></a>
+                    <a href="https://instagram.com/metabullsnft/" target="_blank" rel="noreferrer" class='instagramButton'><FontAwesomeIcon class='instagram' icon={['fab', 'instagram']} /></a>
+                </div>
             </div>
             <div className="gridImg">
                 <img src={astrobull} alt="" class='gridImgAstro'/>
-            </div>
-            <div className="bottomDivs">
-            <div className="mainSocial">
-            <a href="https://twitter.com/MetaBullsNFT" target="_blank" rel="noreferrer" class='twitterButton'><FontAwesomeIcon class='twitter' icon={['fab', 'twitter']} /></a>
-            <a href="https://instagram.com/metabullsnft/" target="_blank" rel="noreferrer" class='instagramButton'><FontAwesomeIcon class='instagram' icon={['fab', 'instagram']} /></a>
-            </div>
             </div>
         </div>
         
