@@ -8,11 +8,11 @@ function Nav() {
         <div className="nav">
             <a href="https://metabullsnft.com/" ><img class="navImg" src={logoish} alt="" /></a>
             <div className="navMenu">
-                <a href="#about" class='navmenu'>ABOUT</a>
-                <a href="#roadmap" class='navmenu'>ROADMAP</a>
-                <a href="#team" class='navmenu'>TEAM</a>
-                <a href="#faq" class='navmenu'>FAQ</a>
-                <Link to='/mint' class='linkMint'><a href="https://metabullsnft.com/mint" class='navmenu navMint'>MINT</a></Link>
+                <a href="https://metabullsnft.com/#about" class='navmenu'>ABOUT</a>
+                <a href="https://metabullsnft.com/#roadmap" class='navmenu'>ROADMAP</a>
+                <a href="https://metabullsnft.com/#team" class='navmenu'>TEAM</a>
+                <a href="https://metabullsnft.com/#faq" class='navmenu'>FAQ</a>
+                <Link to='https://metabullsnft.com/mint' class='linkMint'><a href="https://metabullsnft.com/mint" class='navmenu navMint'>MINT</a></Link>
             </div>
         </div>
     )
