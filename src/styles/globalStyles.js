@@ -1,18 +1,16 @@
 import styled from "styled-components";
 
-
+//background-color: #0d1a41;
 // Used for wrapping a page component
 export const Screen = styled.div`
-  background-color: var(--dark-grey);
-  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
+ 
+  background-color:black;
   background-size: cover;
   background-position: center;
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top:50px;
-  padding-bottom:50px;
   
   
 `;
@@ -55,19 +53,22 @@ export const Container = styled.div`
   background-position: center;
   
   
+  
 `;
 
 export const TextTitle = styled.p`
-color: var(--white);
+color: white;
 font-size: 20px;
 font-weight: 500;
 font-family: 'Press Start 2P', sans-serif;
 padding-top: 20px;
 line-height:30px;
+margin-bottom:20px;
+
 `;
 
 export const TextSubTitle = styled.p`
-  color: var(--white);
+color: var(--white);
   font-size: 16px;
   font-weight: 500;
 `;

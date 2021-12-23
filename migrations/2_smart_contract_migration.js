@@ -1,5 +1,5 @@
 const SmartContract = artifacts.require("SmartContract");
 
 module.exports = function (deployer) {
-  deployer.deploy(SmartContract, "NFT_TEST", "NFTT", "ipfs:/QmPZPGU7WNZ899Y9QwCreSX6qQdzrgfbkEqztW5jCTCeVU/" );
+  deployer.deploy(SmartContract, "Meta Bulls 3", "MTB3", "ipfs://QmTecP6wEP7egqEcZ52bcreD59csTxbufzib3yc6LqNviP/", "ipfs://QmTPWmTZxvjgfeTZWBnt4cmqxnFw9yMvcbadxL7oM8KfAd" );
 };

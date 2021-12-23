@@ -56,25 +56,26 @@ export const StyledImg = styled.img`
 `;
 
 function Mint() {
+  
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
-  const [feedback, setFeedback] = useState("");
+  const [feedback, setFeedback] = useState("The bullish world is a click away .");
   const [claimingNft, setClaimingNft] = useState(false);
 
   const claimNFTs = (_amount) => {
     if (_amount <= 0) {
       return;
     }
-    setFeedback("Minting your Meta Bull...");
+    setFeedback("Minting your Nerdy Coder Clone...");
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, _amount)
+      .mint(_amount)
       .send({
         gasLimit: "285000",
         to: "0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
         from: blockchain.account,
-        value: blockchain.web3.utils.toWei((0.2 * _amount).toString(), "ether"),
+        value: blockchain.web3.utils.toWei((0.01 * _amount).toString(), "ether"),
       })
       .once("error", (err) => {
         console.log(err);
@@ -83,7 +84,7 @@ function Mint() {
       })
       .then((receipt) => {
         setFeedback(
-          "WOW, you now own a Meta Bull. go visit Opensea.io to view it."
+          "Your Meta Bull has successfully minted. go visit https://testnets.opensea.io/collection/meta-bulls-fo to view it."
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -98,7 +99,6 @@ function Mint() {
 
   useEffect(() => {
     getData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [blockchain.account]);
 
   
@@ -120,7 +120,7 @@ function Mint() {
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 35, fontWeight: "bold" }}
             >
-              {data.totalSupply}/5000
+              {data.totalSupply}/100
             </s.TextTitle>
           </s.Container>
           <s.SpacerMedium />
@@ -130,7 +130,7 @@ function Mint() {
             ai={"center"}
             style={{ backgroundColor: "#020d2a", padding: 24 }}
           >
-            {Number(data.totalSupply) === 5000 ? (
+            {Number(data.totalSupply) === 100 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -141,7 +141,7 @@ function Mint() {
                   <a
                     target={"_blank"}
                     rel = {"noreferrer"}
-                    href={"https://opensea.io/collection/nerdy-coder-clones"}
+                    href={"https://testnets.opensea.io/collection/meta-bulls-fo"}
                   >
                     Opensea.io
                   </a>

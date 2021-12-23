@@ -1,6 +1,7 @@
 // constants
+import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
-import SmartContract from "../../contracts/SmartContract.json";
+import SmartContract from "../../contracts/MTB.json";
 // log
 import { fetchData } from "../data/dataActions";
 
@@ -34,21 +35,24 @@ const updateAccountRequest = (payload) => {
 export const connect = () => {
   return async (dispatch) => {
     dispatch(connectRequest());
-    if (window.ethereum) {
-      let web3 = new Web3(window.ethereum);
+    const { ethereum } = window;
+    const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
+    if (metamaskIsInstalled) {
+      Web3EthContract.setProvider(ethereum);
+      let web3 = new Web3(ethereum);
       try {
-        const accounts = await window.ethereum.request({
+        const accounts = await ethereum.request({
           method: "eth_requestAccounts",
         });
-        const networkId = await window.ethereum.request({
+        const networkId = await ethereum.request({
           method: "net_version",
         });
         // const NetworkData = await SmartContract.networks[networkId];
-        if (networkId === 4) {
-          const SmartContractObj = new web3.eth.Contract(
-            SmartContract.abi,
-            //NetworkData.address,
-            "0xd862a555af263c49fd45c769454559e2d329f5f3"
+        // eslint-disable-next-line
+        if (networkId == 4) {
+          const SmartContractObj = new Web3EthContract(
+            SmartContract,
+            "0x2a0043748fedb83dA0F603E4843878DfD6428B67" //smart contract id
           );
           dispatch(
             connectSuccess({
@@ -58,10 +62,10 @@ export const connect = () => {
             })
           );
           // Add listeners start
-          window.ethereum.on("accountsChanged", (accounts) => {
+          ethereum.on("accountsChanged", (accounts) => {
             dispatch(updateAccount(accounts[0]));
           });
-          window.ethereum.on("chainChanged", () => {
+          ethereum.on("chainChanged", () => {
             window.location.reload();
           });
           // Add listeners end
