@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
@@ -98,7 +98,7 @@ export const StyledLink = styled.a`
 
 function MintRetry() {
   const dispatch = useDispatch();
-  const blockchain = useSelector((state) => state.blockchain);
+  const blockchain = useSelector((state) => state.blockchain); 
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
@@ -193,6 +193,7 @@ function MintRetry() {
 
   useEffect(() => {
     getData();
+    // eslint-disable-next-line
   }, [blockchain.account]);
 
   return (
