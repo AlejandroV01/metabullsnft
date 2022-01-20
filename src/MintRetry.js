@@ -16,7 +16,7 @@ export const StyledButton = styled.button`
   background-color: white;
   padding: 10px;
   font-weight: bold;
-  color: var(--secondary-text);
+  color: black;
   width: 100px;
   cursor: pointer;
   box-shadow: 0px 6px 0px -2px rgba(241,195,15, 0.3);
@@ -37,7 +37,7 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
-  color: var(--primary-text);
+  color: black;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -147,7 +147,7 @@ function MintRetry() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `Your Meta Bull has successfully minted. go visit https://testnets.opensea.io/collection/meta-bulls-fo to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -164,8 +164,8 @@ function MintRetry() {
 
   const incrementMintAmount = () => {
     let newMintAmount = mintAmount + 1;
-    if (newMintAmount > 5) {
-      newMintAmount = 5;
+    if (newMintAmount > 15) {
+      newMintAmount = 15;
     }
     setMintAmount(newMintAmount);
   };
@@ -228,20 +228,31 @@ function MintRetry() {
           >
             <s.TextTitle
               style={{
+                
                 textAlign: "center",
                 fontSize: 50,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
+                lineHeight: 1.3,
+                
               }}
             >
-              5/{CONFIG.MAX_SUPPLY} {/* data.totalSupply is not working so i replaced it*/}
+              PRE-SALE
             </s.TextTitle>
+            <s.SpacerLarge />
+            <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)", fontSize: 16 }}
+                >
+                  Max mints of 15 per transaction and 50 per wallet
+                </s.TextDescription>
+            
 
             <span
               style={{
                 textAlign: "center",
               }}
             >
+              <s.SpacerSmall />
               <StyledButton
                 onClick={(e) => {
                   window.open("https://metabullsnft.com/#roadmap", "_blank");
@@ -259,7 +270,7 @@ function MintRetry() {
                 }}
                 onClick={(e) => {
                   window.open(
-                    "https://testnets.opensea.io/collection/meta-bull",
+                    "https://testnets.opensea.io/collection/meta-bulls-fo",
                     "_blank"
                   );
                 }}
@@ -287,19 +298,25 @@ function MintRetry() {
               </>
             ) : (
               <>
+              <s.TextTitle
+              style={{
+                textAlign: "center",
+                fontSize: 40,
+                fontWeight: "bold",
+                color: "var(--accent-text)",
+              }}
+            >
+              5/{CONFIG.MAX_SUPPLY} {/* data.totalSupply is not working so i replaced it*/}
+            </s.TextTitle>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
-                  1 Meta Bull costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}.
+                  {CONFIG.DISPLAY_COST}{" "}
+                  {CONFIG.NETWORK.SYMBOL} + Gas Fee
                 </s.TextTitle>
                 <s.SpacerXSmall />
-                <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
-                >
-                  Excluding gas fees.
-                </s.TextDescription>
-                <s.SpacerSmall />
+                
+                
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
@@ -311,7 +328,9 @@ function MintRetry() {
                     >
                       Connect to the {CONFIG.NETWORK.NAME} network
                     </s.TextDescription>
+                    
                     <s.SpacerSmall />
+                    
                     <StyledButton
                       onClick={(e) => {
                         e.preventDefault();

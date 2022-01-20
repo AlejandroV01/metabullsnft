@@ -129,7 +129,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 <h1>ABOUT</h1>
                 <p>The birth of VOXXTIES to the metaverse is about introducing a new generation to a world of their own. The idea is to build a virtual lineage by acquiring two 
                     VOXXTIES to breed baby VOXXTIES. Your baby VOXXTIES can then be utilized to unlock missions, engage in battles and play to earn all within the Metaverse.</p>
-                <a href="https://google.com">GET WHITELISTED</a>
+                <a href="https://discord.gg/QetE7BEJQZ">GET WHITELISTED</a>
             </div>
             <img src={astrobull} alt="" class='astrobull' />
         </div>
@@ -305,7 +305,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         Aim bullish and join the Meta Bulls!
     </p>
     <a href="https://discord.gg/QetE7BEJQZ" target="_blank" rel="noreferrer"><button class='joinDiscord'>Join our Discord</button></a>
-    <a href="https://google.com"><button class='comingSoon'>Coming Soon!</button></a>
+    <a href="https://metabullsnft.com"><button class='comingSoon'>Coming Soon!</button></a>
         </div>
 
 
