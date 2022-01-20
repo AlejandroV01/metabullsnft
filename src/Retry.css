@@ -27,7 +27,7 @@ html, body{
     display: grid;
     grid-template-rows: auto auto;
     justify-items: center;
-    background-image: url(./PageBG.png);
+    
 }
 
 .topDivs h1{

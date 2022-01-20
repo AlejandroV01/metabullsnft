@@ -24,7 +24,7 @@ function HomeAgain() {
     let interval;
 
     const startTimer = () => {
-        const countDownDate = new Date("December 28,2021 ").getTime();
+        const countDownDate = new Date("February 28,2022 ").getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
@@ -100,7 +100,7 @@ function HomeAgain() {
                         <div class="mintContainer">
                             <h1>Public Sale</h1>
                             <p class="release">Public Release On:</p>
-                            <p class="release lastchild">12/28/2021</p>
+                            <p class="release lastchild">2/28/2022</p>
                             <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
                             <p class="releaseprice">Max mints of 3 per transaction and 3 per wallet</p>
                             <p class="releaseprice"><strong>"TBA" ETH + Gas Fee</strong></p>

@@ -27,7 +27,7 @@ function Retry() {
     let interval;
 
     const startTimer = () => {
-        const countDownDate = new Date("December 28,2021 ").getTime();
+        const countDownDate = new Date("Febuary 28,2022 ").getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
